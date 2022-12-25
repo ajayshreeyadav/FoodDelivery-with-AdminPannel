@@ -36,3 +36,45 @@ section.hero {
     color: $pure;
   }
 }
+.btn-primary {
+  background-color: $primary;
+  color: $pure;
+  transition: $smooth;
+  &:hover {
+    background-color: $primary-hover;
+  }
+}
+
+.cart {
+  background: $secondary;
+  .amount {
+    color: $primary;
+  }
+  .btn-primary {
+    background-color: $primary;
+    color: $pure;
+    transition: $smooth;
+    &:hover {
+      background-color: $primary-hover;
+    }
+  }
+}
+
+section.login {
+  background-color: $secondary;
+  min-height: calc(100vh - 86px);
+  .btn-primary {
+    background-color: $primary;
+    color: $pure;
+    transition: $smooth;
+    &:hover {
+      background-color: $primary-hover;
+    }
+  }
+  a {
+    color: $primary;
+    &:hover {
+      color: $primary-hover;
+    }
+  }
+}
