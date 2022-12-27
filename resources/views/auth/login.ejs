@@ -1,6 +1,6 @@
 <section class="login flex justify-center pt-24">
-  <div class="block p-6 rounded-lg shadow-lg bg-white w-1/4">
-    <form>
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-1/4 mb-60">
+    <form action="/login" method="POST">
       <div class="form-group mb-6">
         <label
           for="exampleInputEmail2"
@@ -8,6 +8,7 @@
           >Email</label
         >
         <input
+          name="email"
           type="email"
           class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-orange-600 focus:outline-none"
           id="exampleInputEmail2"
@@ -22,11 +23,15 @@
           >Password</label
         >
         <input
+          name="password"
           type="password"
           class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-orange-600 focus:outline-none"
           id="exampleInputPassword2"
           placeholder="Password"
         />
+        <% if(messages.error){ %>
+        <span class="text-red-500 text-sm"><%= messages.error%></span>
+        <% } %>
       </div>
       <div class="flex items-center justify-between">
         <button
