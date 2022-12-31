@@ -100,12 +100,12 @@ export function initAdmin(socket) {
       })
       .join('');
   }
-  // Socket
+  // Socket;
   socket.on('orderPlaced', order => {
     new Noty({
       type: 'success',
       timeout: 1000,
-      text: 'New order!',
+      text: 'New Order Updated!',
       progressBar: false,
     }).show();
     orders.unshift(order);
