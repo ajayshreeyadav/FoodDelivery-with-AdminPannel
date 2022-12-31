@@ -295,6 +295,14 @@ section.cart {
 section.cart .amount {
   color: #fe5f1e;
 }
+section.cart .btn-primary {
+  background-color: #fe5f1e;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+section.cart .btn-primary:hover {
+  background-color: #b23301;
+}
 
 section.login {
   background: #f8f8f8;

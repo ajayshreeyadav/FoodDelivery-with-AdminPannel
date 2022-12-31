@@ -5,7 +5,7 @@
           <h6 class="text-lg">
             <em>Are you hungry!</em>
           </h6>
-          <h1 class="text-3xl md: text-6xl font-bold">
+          <h1 class="text-3xl md:text-6xl font-bold">
             Get a yummy pizza in 30 min
           </h1>
           <button
@@ -21,10 +21,10 @@
     </section>
     <section class="menu container py-8 mx-auto px-12">
       <h1 class="text-xl font-bold mb-8">All Pizzas</h1>
-      <div class="grid grid-cols-4 gap-x-12 gap-y-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 col-gap-12 row-gap-16">
 
         <% pizzas.forEach(function(pizza){ %>
-          <div class="w-64">
+          <div class="w-full md:w-64">
           <img class="h-40 mb-4 mx-auto" src='/img/<%= pizza.image %>' alt="peproni"></img>
           <div class="text-center">
             <h2 class="text-lg mb-4"><%= pizza.name%></h2>

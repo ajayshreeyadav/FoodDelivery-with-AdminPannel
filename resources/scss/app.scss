@@ -54,6 +54,14 @@ section.cart {
   .amount {
     color: $primary;
   }
+  .btn-primary {
+    background-color: $primary;
+    color: $pure;
+    transition: $smooth;
+    &:hover {
+      background-color: $primary-hover;
+    }
+  }
 }
 
 section.login {
